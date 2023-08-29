@@ -1,4 +1,3 @@
-![image](https://storage.googleapis.com/qwasar-public/track-ds/linear_points_regressed.png)
 # Linear Regression and Gradient Descent in Python
 
 ## Overview
