@@ -1,9 +1,23 @@
-# My-Linear-Regression
+# Linear Regression and Gradient Descent in Python
+
+## Overview
+
+This project aims to provide an easy-to-understand, hands-on example of linear regression and gradient descent in Python. It includes implementations for both least squares linear regression and gradient descent optimizer.
+
+## Features
+
+Least Squares Linear Regression
+
+Mean Squared Error Calculation
+
+Gradient Descent Optimization
+
+Data visualization using Matplotlib
 
 
-# Description
+## Description
 
-**Subject**
+### Subject
 
 Getting and analyzing existing data is the very first task of a data scientist.
 The next step is to find tendencies and to generalize.
@@ -34,16 +48,22 @@ These kinds of problems and models are called **Linear Regression**.
 The goal of this journey is to explore linear and **logistic regressions**.
 
 
-# Introduction
+## Introduction
+
 A linear model makes predictions by computing a weighted sum of the features (plus a constant term called the bias term):
 
-y = hθ(x) = θT·x = θnxn + ... + θ2x2 + θ1x1 + θ0
+y = hθ(x) = θ^T x = θ_n * x_n + ... + θ_2 * x_2 + θ_1 * x_1 + θ_0
 
 • y is the predicted value.
+
 • n is the number of features.
+
 • xi is the ith feature value (with x0 always equals to 1).
+
 • θj is the jth model feature weight (including the bias term θ0).
+
 • · is the dot product.
+
 • hθ is called the hypothesis function indexed by θ.
 
 Now that we have our linear regression model, we need to define a cost function to train it, i.e measure how well the model performs and fits the data.
@@ -59,11 +79,14 @@ MSE(X, hθ) =   1⁄m ∑ (θT·x(i) - y(i))2
          k=1
 
 • X is a matrix that contains all the feature values. There is one row per instance.
+
 • m is the number of instances.
+
 • xi is the feature values vector of the ith instance
+
 • yi is the label (desired value) of the ith instance.
 
-# Closed-Form Solution
+## Closed-Form Solution
 
 To find the value of θ that minimizes the cost function, we can differentiate the MSE with respect to θ.
 It directly gives us the correct θ in what we call the Normal Equation:
@@ -72,7 +95,7 @@ It directly gives us the correct θ in what we call the Normal Equation:
 
 (NB: This requires XTX to be reversible).
 
-# Gradient Descent
+## Gradient Descent
 
 
 Reminder about Gradient Descent
@@ -80,4 +103,16 @@ As you may have noticed, our MSE cost function is a convex function. This means 
 will always lead us to a global optimum. Remember that the gradient descent moves toward the direction of the steepest slope.
 
 We will write a class to perform the gradient descent optimization.
+
+
+### Limitations
+
+This is a basic example and is not suitable for large datasets. Future versions may include:
+
+Batch Gradient Descent
+
+Mini-batch Gradient Descent
+
+Regularization techniques
+
 
