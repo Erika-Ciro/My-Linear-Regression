@@ -137,9 +137,10 @@ x, y = np.meshgrid(x, y)
 f_vec = np.vectorize(lambda x, y: f(np.array([x, y])))
 z = f_vec(x, y)
 
-fig = plt.figure()
+fig = plt.figure(figsize=(9,7))
 ax = fig.add_subplot(111, projection='3d')
-ax.plot_surface(x, y, z, cmap='viridis')
+ax.plot_surface(x, y, z, alpha=0.7, cmap='viridis')
+
 ax.set_title('3D plot of function f')
 
 history = np.array(grad.history_)
