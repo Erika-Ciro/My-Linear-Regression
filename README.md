@@ -6,13 +6,13 @@ This project aims to provide an easy-to-understand, hands-on example of linear r
 
 ## Features
 
-Least Squares Linear Regression
+**Least Squares Linear Regression**
 
-Mean Squared Error Calculation
+**Mean Squared Error Calculation**
 
-Gradient Descent Optimization
+**Gradient Descent Optimization**
 
-Data visualization using Matplotlib
+**Data visualization using Matplotlib**
 
 
 ## Description
@@ -31,7 +31,7 @@ For instance, let's say we want to analyze the relation between two attributes a
 
 ![image](https://storage.googleapis.com/qwasar-public/track-ds/linear_points_nude.png)
 
-We clearly see a trend here, even though the data is quite noisy, it looks like feature 2 goes up linearly as feature 1 increases.
+We see a trend here, even though the data is quite noisy, it looks like feature 2 goes up linearly as feature 1 increases.
 So in the model selection step, we can decide to go for a linear model.
 
 feature_2 = θ0 + θ1 . feature_1
@@ -58,7 +58,7 @@ y = hθ(x) = θ^T x = θ_n * x_n + ... + θ_2 * x_2 + θ_1 * x_1 + θ_0
 
 • n is the number of features.
 
-• xi is the ith feature value (with x0 always equals to 1).
+• xi is the ith feature value (with x0 always equals 1).
 
 • θj is the jth model feature weight (including the bias term θ0).
 
@@ -109,10 +109,10 @@ We will write a class to perform the gradient descent optimization.
 
 This is a basic example and is not suitable for large datasets. Future versions may include:
 
-Batch Gradient Descent
+**Batch Gradient Descent**
 
-Mini-batch Gradient Descent
+**Mini-batch Gradient Descent**
 
-Regularization techniques
+**Regularization techniques**
 
 
